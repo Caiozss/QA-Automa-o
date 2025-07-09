@@ -1,3 +1,9 @@
 # Postman - Testes de API
 
-Coleções de testes com scripts de validação. Rodar com Postman ou via Newman.
+Este projeto contém testes de API criados no Postman e executados via Newman.
+
+## Requisitos
+- Node.js instalado
+- Newman instalado globalmente:
+```bash
+npm install -g newman
