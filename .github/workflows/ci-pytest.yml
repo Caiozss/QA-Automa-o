@@ -21,8 +21,7 @@ jobs:
 
       - name: Instalar dependências
         working-directory: ./pytest-api-tests
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Executar testes Pytest
         working-directory: ./pytest-api-tests
