@@ -22,12 +22,8 @@ jobs:
       - name: Instalar dependências
         working-directory: ./pytest-api-tests
         run: |
-          python -m venv venv
-          source venv/bin/activate
           pip install -r requirements.txt
 
       - name: Executar testes Pytest
         working-directory: ./pytest-api-tests
-        run: |
-          source venv/bin/activate
-          pytest -v
+        run: pytest -v
