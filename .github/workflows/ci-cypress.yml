@@ -30,6 +30,6 @@ jobs:
 
       - name: Executar testes Cypress
         working-directory: ./cypress-web-tests
-        run: npx cypress run --spec "cypress/e2e/login.cy.js"
+        run: npx cypress run --spec "cypress/e2e/login.espec.cy.js"
 
 
