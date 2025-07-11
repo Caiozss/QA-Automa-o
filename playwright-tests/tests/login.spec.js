@@ -13,9 +13,11 @@ test.describe('Login Testes', () => {
   });
 
   test('Login com falha', async ({ page }) => {
-    await page.fill('#username', 'user_erro');
-    await page.fill('#password', 'senha_erro');
+    await page.fill('#username', 'student3');
+    await page.fill('#password', 'Password1234');
     await page.click('#submit');
-    await expect(page.getByText('Your username is invalid!')).toBeVisible();
+    const erro = await page.locator('#error').textContent();
+    expect(erro).toContain('Your username is invalid!');
+
   });
 });
